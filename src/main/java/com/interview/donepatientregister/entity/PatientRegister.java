@@ -23,15 +23,15 @@ public class PatientRegister {
      @Column(name = "last_name")
     private String lastName;
      @Column(name = "date_of_birth")
-    private String DOB;
+    private String dateOfBirth;
      @Column(name = "phone_number")
     private String phoneNumber;
      @Column(name = "email_Address")
     private String email;
      @Column(name="resident_address")
     private String address;
-     @Column(name = "driver_license")
+     @Column(name = "driver_license", length = 12000)
     private  String driverLicense;
      @Column(name = "appointment_time")
-    private String appointmentTime;
+    private String timeOfAppointment;
 }
