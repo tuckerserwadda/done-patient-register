@@ -1,10 +1,6 @@
 <template>
     <div>
-  
 <div v-if="patientRegister">
-
-    
-        <!-- <div class="patient-data-table"> -->
             <DataTable ref="dt" :value="patientRegister" responsiveLayout="stack">
                 <template #header><h3>{{patientRegister != null? "Rigistered Patients" :"No Patients Registered" }}</h3></template>
                   <Column  header="Driver License">
@@ -20,40 +16,26 @@
                   <Column field="dateOfBirth" header="Date Of Birth" ></Column>
                   <Column field="timeOfAppointment" header="Appointment Time" ></Column>
             </DataTable>
-
-        <!-- </div> -->
-  
-
   </div>
-        
-
     </div>
 </template>
 
 <script>
     export default {
         name:'ViewPatientRegister',
-
+// dispatch the get action to get data from the database 
         created() {
             this.$store.dispatch('getPatients')
             .catch((error)=>{
                 console.log(error)
             })
         },
+        // get the register from the store
         computed:{
             patientRegister(){
                 return this.$store.state.patientRegister
             },
-            patientRegisterKeys(){
-                return Object.keys(this.$store.state.patientRegister)
-            }
-        },
-        methods: {
-            showRegister(){
-                console.log(this.patientRegister)
-            }
-        },
-        
+        }, 
     }
 </script>
 
