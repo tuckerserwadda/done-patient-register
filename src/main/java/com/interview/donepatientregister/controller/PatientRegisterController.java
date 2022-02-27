@@ -10,7 +10,7 @@ import java.util.List;
 
 @RequestMapping("/")
 @RestController
-//@CrossOrigin(origins = "http://localhost:8081")
+@CrossOrigin
 public class PatientRegisterController {
     @Autowired
     PatientRegisterService patientRegisterService;

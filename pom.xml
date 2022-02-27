@@ -15,7 +15,7 @@
 	<description>interview program </description>
 	<properties>
 		<java.version>11</java.version>
-		<node.version>v10.15.0</node.version>
+		<node.version>v16.14.0</node.version>
 		<npm.version>7.24.1</npm.version>
 	</properties>
 	<dependencies>
