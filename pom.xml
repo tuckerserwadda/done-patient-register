@@ -10,13 +10,15 @@
 	</parent>
 	<groupId>com.interview</groupId>
 	<artifactId>done-patient-register</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1</version>
 	<name>done-patient-register</name>
 	<description>interview program </description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 		<node.version>v16.14.0</node.version>
 		<npm.version>7.24.1</npm.version>
+		<maven.compiler.source>8</maven.compiler.source>
+		<maven.compiler.target>8</maven.compiler.target>
 	</properties>
 	<dependencies>
 		<dependency>
