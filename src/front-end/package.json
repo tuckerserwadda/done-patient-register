@@ -9,6 +9,10 @@
     "postinstall": "npm run build",
     "start": "node server.js"
   },
+  "engines" : { 
+    "npm" : ">=7.24.1",
+    "node" : ">=14.17.6"
+  },
   "dependencies": {
     "@vuelidate/core": "^2.0.0-alpha.34",
     "@vuelidate/validators": "^2.0.0-alpha.26",
